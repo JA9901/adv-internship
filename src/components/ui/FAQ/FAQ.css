@@ -1,0 +1,50 @@
+.faq__card {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  
+  .faq__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 24px 0;
+    gap: 8px;
+  }
+  
+  .faq__title {
+    font-weight: 500;
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 0;
+    color: #032b41;
+    transition: 0.3s;
+  }
+  
+  .faq__arrow {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+  }
+  
+  .rotate {
+    transform: rotate(180deg) !important;
+  }
+  
+  .collapse {
+    height: 0;
+    transition: height 0.35s ease;
+  }
+  
+  .show {
+    height: 90px !important;
+  }
+  
+  .faq__text {
+    min-height: 1px;
+    padding-bottom: 24px;
+    color: #394547;
+    line-height: 1.5;
+  }

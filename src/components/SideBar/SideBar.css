@@ -1,0 +1,113 @@
+.sidebar {
+    background-color: #f7faf9;
+    width: 200px;
+    min-width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition: all 0.3s;
+  }
+  
+  .sidebar__logo--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-top: 16px;
+    max-width: 160px;
+    margin: 0 auto;
+  }
+  
+  .sidebar__logo {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+  }
+  
+  .sidebar__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 60px);
+    padding-bottom: 20px;
+    overflow-y: auto;
+  }
+  
+  .sidebar__top {
+    margin-top: 40px;
+  }
+  
+  .sidebar__link {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    color: #032b41;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .sidebar__link:hover {
+    background-color: #f0efef;
+  }
+  
+  .sidebar__link--false {
+    cursor: not-allowed;
+  }
+  
+  .sidebar__link--line {
+    width: 5px;
+    height: 100%;
+    background-color: transparent;
+    margin-right: 16px;
+  }
+  
+  .active--tab {
+    background-color: #2bd97c;
+  }
+  
+  .sidebar__icon--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+  }
+  
+  .sidebar__icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media (max-width: 1080px) {
+    .sidebar {
+      transform: translateX(-100%);
+    }
+  
+    .sidebar__overlay,
+    .sidebar__overlay--hidden {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3a4649;
+      transition: opacity 0.4s ease 0s;
+      z-index: 10;
+    }
+  
+    .sidebar__overlay {
+      opacity: 0.65;
+      pointer-events: auto;
+    }
+  
+    .sidebar__overlay--hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  
+    .sidebar__opened {
+      transform: translateX(0);
+      width: 50%;
+    }
+  }

@@ -1,0 +1,165 @@
+.book__info--wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  
+  .book__info--title {
+    color: #032b41;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 32px;
+  }
+  
+  .book__info--author {
+    color: #032b41;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  
+  .book__info--subtitle {
+    font-size: 20px;
+    color: #032b41;
+    margin-bottom: 16px;
+    font-weight: 300;
+  }
+  
+  .book__info--details {
+    border-top: 1px solid #e1e7ea;
+    border-bottom: 1px solid #e1e7ea;
+    padding: 16px 0;
+    margin-bottom: 24px;
+  }
+  
+  .book__sub--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    row-gap: 12px;
+  }
+  
+  .book__sub--info {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: #032b41;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .book__sub--icon {
+    display: flex;
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+  }
+  
+  .book__sub--icon > svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .book__btn--wrapper {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .book__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 48px;
+    background-color: #032b41;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 8px;
+    transition: opacity 0.2s;
+  }
+  
+  .book__btn--icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+  }
+  
+  .book__btn--icon > svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .book__btn:hover {
+      opacity: 0.9;
+  }
+  
+  .book__info--bookmark {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0365f2;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 40px;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+  
+  .bookmark__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .bookmark__icon > svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .book__info--about {
+    font-size: 18px;
+    color: #032b41;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  
+  .book__info--tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .book__info--tag {
+    background-color: #f1f6f4;
+    padding: 0 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    cursor: not-allowed;
+    color: #032b41;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .book__info--description {
+    color: #032b41;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  
+  .info__image {
+    height: 300px;
+    width: 300px;
+    min-width: 300px;
+  }
+  
+  @media (max-width: 1080px) {
+    .book__info--wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
